@@ -1,0 +1,13 @@
+{
+  "package_name": "sentinel-x-prompts",
+  "display_name": "SENTINEL-X Copilot Prompt Package",
+  "version": "1.0.0",
+  "description": "Governed architecture and implementation prompts for the SENTINEL-X AI operating environment.",
+  "prompt_runtime": ["GitHub Copilot Agent Mode", "Visual Studio Code"],
+  "entry_points": {"bootstrap": "prompts/02-sentinel-x-architecture-security-bootstrap.md", "implementation": "prompts/03-sentinel-x-platform-implementation.md"},
+  "documents": ["README.md", "CONTRIBUTING.md", "SECURITY.md", "RESPONSIBLE_AI.md", "CHANGELOG.md", "docs/usage-guide.md", "docs/execution-sequence.md", "docs/package-maintenance.md", "docs/prompt-customization-guide.md", "docs/glossary.md"],
+  "templates": ["templates/architecture-decision-record.md", "templates/phase-execution-request.md", "templates/phase-completion-report.md", "templates/threat-model-entry.md", "templates/security-review-checklist.md", "templates/quality-gate-report.md"],
+  "validation": {"required_files": "validation/required-files.txt", "quality_checklist": "validation/prompt-quality-checklist.md"},
+  "security_model": {"authorization": "Security Governor", "default_policy": "deny-by-default", "capability_rule": "NO CAPABILITY = NO ACTION", "ai_is_trust_anchor": false},
+  "license": "See LICENSE.md"
+}
